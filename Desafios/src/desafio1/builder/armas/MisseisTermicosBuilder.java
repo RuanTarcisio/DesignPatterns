@@ -10,6 +10,10 @@ public class MisseisTermicosBuilder implements ArmaBuilder{
         this.arma = misseisTermicos;
     }
 
+    public MisseisTermicosBuilder() {
+        this.arma = new MisseisTermicos();
+    }
+
     public MisseisTermicos getMisseisTermicos() {
         return arma;
     }

@@ -18,9 +18,10 @@ public abstract class NaveEspacial {
         this.autonomia = autonomia;
     }
 
+    public NaveEspacial() {
+    }
 
-
-//    public NaveEspacial(NaveEspacialBuilder builder) {
+    //    public NaveEspacial(NaveEspacialBuilder builder) {
 //        this.idNave = UUID.randomUUID(); // Gera automaticamente um UUID único
 //        this.armas = builder.armas;
 //        this.capacidadePassageiros = builder.capacidadePassageiros;

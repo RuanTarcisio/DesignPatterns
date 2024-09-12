@@ -12,7 +12,7 @@ public class CanhaoPlasmaBuilder implements ArmaBuilder{
         this.arma = arma;
     }
 
-    public CanhaoPlasmaBuilder( ) {
+    public CanhaoPlasmaBuilder() {
         this.arma = new CanhaoPlasma();
     }
 

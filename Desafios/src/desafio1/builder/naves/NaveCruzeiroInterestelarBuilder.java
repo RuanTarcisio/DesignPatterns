@@ -1,6 +1,7 @@
 package desafio1.builder.naves;
 
 
+import desafio1.builder.armas.ArmaBuilder;
 import desafio1.builder.armas.CanhaoPlasmaBuilder;
 import desafio1.builder.armas.LaserBuilder;
 import desafio1.models.Arma;
@@ -21,6 +22,7 @@ public class NaveCruzeiroInterestelarBuilder implements NaveEspacialBuilder{
     }
 
     public NaveCruzeiroInterestelarBuilder() {
+        this.nave = new CruzeiroInterestelar();
         this.armas = new HashMap<>();
         this.armas.put("Laser", new LaserBuilder().starter().build());
         this.armas.put("Canhao Plasma", new CanhaoPlasmaBuilder().starter().build());

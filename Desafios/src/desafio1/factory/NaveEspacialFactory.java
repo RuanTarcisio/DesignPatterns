@@ -1,6 +1,5 @@
 package desafio1.factory;
 
-import desafio1.builder.Gerente;
 import desafio1.builder.naves.NaveEspacialBuilder;
 import desafio1.models.NaveEspacial;
 
@@ -12,5 +11,5 @@ public abstract class NaveEspacialFactory {
         this.naveEspacialBuilder = builder;
     }
 
-    abstract NaveEspacial criarNave();
+    public abstract NaveEspacial criarNave();
 }

@@ -3,8 +3,13 @@ package desafio1.models;
 public class TorpedoFotonico extends Arma {
     private int tempoArmar; // em segundos
 
-    public TorpedoFotonico(int poderDestruicao, int alcance, int tempoArmar) {
-        super("Torpedo Fotônico", poderDestruicao, alcance);
+//    public TorpedoFotonico(int poderDestruicao, int alcance, int tempoArmar) {
+//        super("Torpedo Fotônico", poderDestruicao, alcance);
+//        this.tempoArmar = tempoArmar;
+//    }
+
+    public TorpedoFotonico(String nome, String tipo, int poderDestruicao, int alcance, int tempoArmar) {
+        super("Laser", tipo, poderDestruicao, alcance);
         this.tempoArmar = tempoArmar;
     }
 

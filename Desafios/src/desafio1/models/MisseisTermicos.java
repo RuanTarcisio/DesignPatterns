@@ -8,6 +8,9 @@ public class MisseisTermicos extends Arma {
         this.capacidadeRastreamentoCalor = capacidadeRastreamentoCalor;
     }
 
+    public MisseisTermicos() {
+    }
+
     public void setCapacidadeRastreamentoCalor(int capacidadeRastreamentoCalor) {
         this.capacidadeRastreamentoCalor = capacidadeRastreamentoCalor;
     }

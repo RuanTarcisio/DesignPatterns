@@ -1,7 +1,7 @@
 package desafio1.factory;
 
-import desafio1.builder.Gerente;
 import desafio1.builder.naves.NaveEspacialBuilder;
+import desafio1.models.CruzeiroInterestelar;
 import desafio1.models.NaveEspacial;
 
 public class CruzeiroInterestelarFactory extends NaveEspacialFactory{
@@ -12,7 +12,10 @@ public class CruzeiroInterestelarFactory extends NaveEspacialFactory{
     }
 
     @Override
-    NaveEspacial criarNave() {
-        return naveEspacialBuilder.starter().build();
+    public NaveEspacial criarNave() {
+
+        CruzeiroInterestelar cruzeiroInterestelar = (CruzeiroInterestelar) super.naveEspacialBuilder.starter().build();
+
+        return cruzeiroInterestelar;
     }
 }
